@@ -18,4 +18,8 @@ root.render(
   </React.StrictMode>,
 );
 
-new EventSource('/esbuild').addEventListener('change', () => location.reload());
+if (process.env.NODE_ENV !== 'production') {
+  new EventSource('/esbuild').addEventListener('change', () =>
+    location.reload(),
+  );
+}
