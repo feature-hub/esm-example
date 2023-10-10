@@ -1,0 +1,36 @@
+{
+  "name": "feature-hub-esm-example",
+  "version": "1.0.0",
+  "description": "Loading a Feature App with ES Modules",
+  "keywords": [
+    "react",
+    "feature hub",
+    "esm"
+  ],
+  "license": "ISC",
+  "author": "Hendrik Liebau <mail@hendrik-liebau.de>",
+  "type": "module",
+  "scripts": {
+    "start": "node ./esbuild.js"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "@feature-hub/core": "^3.0.0",
+    "@feature-hub/react": "^3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.4",
+    "@types/react": "^18.2.27",
+    "@types/react-dom": "^18.2.12",
+    "esbuild": "^0.19.4",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}

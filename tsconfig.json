@@ -1,0 +1,13 @@
+{
+  "include": ["./src/**/*", "./*"],
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "checkJs": true,
+    "noEmit": true,
+    "lib": ["dom", "es2022"],
+    "jsx": "preserve",
+    "module": "node16",
+    "moduleResolution": "node16"
+  }
+}
