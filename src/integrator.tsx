@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
     <FeatureHubContextProvider value={{featureAppManager}}>
-      <FeatureAppLoader featureAppId="hello-world" src="/js/feature-app.js" />
+      <FeatureAppLoader featureAppId="hello-world" src="./feature-app.js" />
     </FeatureHubContextProvider>
   </React.StrictMode>,
 );
