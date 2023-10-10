@@ -11,7 +11,8 @@
   "author": "Hendrik Liebau <mail@hendrik-liebau.de>",
   "type": "module",
   "scripts": {
-    "start": "node ./esbuild.js"
+    "build": "node ./build.js",
+    "start": "node ./start.js"
   },
   "browserslist": [
     ">0.2%",
