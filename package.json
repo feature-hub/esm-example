@@ -11,8 +11,10 @@
   "author": "Hendrik Liebau <mail@hendrik-liebau.de>",
   "type": "module",
   "scripts": {
-    "build": "node ./build.js",
-    "start": "node ./start.js"
+    "prebuild": "node ./scripts/prepare.js",
+    "build": "node ./scripts/build.js",
+    "prestart": "node ./scripts/prepare.js",
+    "start": "node ./scripts/start.js"
   },
   "browserslist": [
     ">0.2%",
@@ -27,6 +29,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@hyrious/esbuild-plugin-commonjs": "^0.2.2",
     "@types/node": "^20.8.4",
     "@types/react": "^18.2.27",
     "@types/react-dom": "^18.2.12",

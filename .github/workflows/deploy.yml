@@ -32,6 +32,8 @@ jobs:
       - name: Install
         run: npm ci --fund false --audit false --loglevel error
       - name: Build
+        env:
+          NODE_ENV: production
         run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
