@@ -14,4 +14,7 @@ const finalHtml =
     ? originalHtml.replace(/\?dev/g, '')
     : originalHtml;
 
-await fs.writeFile(path.join(dirname, '../public/index.html'), finalHtml);
+const distDirname = path.join(dirname, '../dist');
+
+await fs.mkdir(distDirname, {recursive: true});
+await fs.writeFile(path.join(distDirname, 'index.html'), finalHtml);

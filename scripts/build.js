@@ -11,7 +11,7 @@ const dirname = path.dirname(url.fileURLToPath(import.meta.url));
 export const options = {
   absWorkingDir: path.join(dirname, '..'),
   entryPoints: ['src/integrator.tsx', 'src/feature-app.tsx'],
-  outdir: 'public/js',
+  outdir: 'dist',
   bundle: true,
   format: 'esm',
   external: ['react'],

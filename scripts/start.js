@@ -4,7 +4,7 @@ import url from 'url';
 import {options} from './build.js';
 
 const dirname = path.dirname(url.fileURLToPath(import.meta.url));
-const servedir = path.join(dirname, '../public');
+const servedir = path.join(dirname, '../dist');
 
 let ctx = await esbuild.context(options);
 
