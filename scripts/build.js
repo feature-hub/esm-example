@@ -15,7 +15,7 @@ export const options = {
   bundle: true,
   format: 'esm',
   external: ['react'],
-  plugins: [commonjs()],
+  plugins: [commonjs({filter: /node_modules\/(react-dom)\//})],
   sourcemap: true,
   minify: process.env.NODE_ENV === 'production',
 };
